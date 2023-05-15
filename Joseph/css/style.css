@@ -1,0 +1,97 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins;
+  color: white;
+  background-color: #241443;
+}
+
+header{
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.links li{
+  display: inline-block;
+  margin: 8px;
+}
+
+.links li a{
+  text-decoration: none;
+  color: white;
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.my-skills button{
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid gray;
+}
+section{
+  margin: 0px auto;
+  width: 90%;
+}
+
+.student-bio{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.student-bio h3{
+  font-size: 26px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+.student-bio h4{
+  color: tomato;
+}
+
+#skills{
+  padding: 30px 0;
+}
+#skills ul li{
+  list-style: none;
+}
+.bio h3:nth-last-child(2){
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.project-card{
+  max-width: 400px;
+  font-family: Poppins;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+}
+
+.project-card img{
+  width: 100%;
+}
+
+footer{
+  padding: 40px 0px;
+}
+
+.contact{
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div>a{
+  color: white;
+  text-decoration: none;
+}
