@@ -1,0 +1,36 @@
+*{
+	padding:  0px;
+	margin: 0px;
+}
+header{
+	background-color: transparent;
+	padding: 10px;
+	color: #5cb85c;
+  }
+  nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 0px auto;
+}
+.links li{
+	display: inline-block;
+	margin: 8px;
+  }
+  
+  .links li a{
+	text-decoration: none;
+	color: #5cb85c;
+	font-family: Poppins;
+	font-weight: 500;
+  }
+  *{
+	background-color:  #fff;
+  }
+.contact-us{
+	max-width: 700px;
+	margin: 50px;
+	width: 100%;
+	background: #fff;
+	padding: 25px 30px;

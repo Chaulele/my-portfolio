@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Joseph</title>
+    <style>
+      .mySlides {display:none;}
+    </style>
 </head>
 <body>
  <!-- navigation bar with student name     -->
@@ -20,10 +23,16 @@
         <li><a href="about me.html">About</a></li>
         <li><a href="myskills.html">My skills</a></li>
         <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><input type="text" name="search" placeholder="Search.."></li>
       </ul>
     </nav>
   </header>
   <!-- end of navigation bar -->
+   <!-- greet time    -->
+  <div id="greeting"></div>
+  <script src="java.js"></script>
+  <!-- end of greet time -->
   <!-- student bio -->
   <section class="bio" id="about">
     <div class="student-bio">
@@ -42,15 +51,38 @@
          <button name="button">HTML</button>
          <button name="button">CSS</button>
          <button name="button">Data entry</button>  
-  </section>
+  </section><br>
   <!-- end of skills section -->
   <section>
-    <h4>Recent Projects</h4>
+    <h4>Recent Projects</h4><br>
     <div class="project-card">
-      <img src="./images/form.png">
-      <p>And here is one of my recenct projects which was creating a student registration form.</p>
-      <a href="formss.html">View Project</a>
+      <div class="display-container">
+      
+    <img class="mySlides" src="./images/form.png" style="width:100%">
+    <img class="mySlides" src="./images/Screenshot (1).png" style="width:100%">
+    <img class="mySlides" src="./images/Screenshot (3).png" style="width:100%">
+    <img class="mySlides" src="./images/Screenshot (6).png" style="width:100%">
+    <img class="mySlides" src="./images/Screenshot (7).png" style="width:100%">
     </div>
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 4 seconds
+  }
+  </script>
+  <p>And here is one of my recenct projects which was creating a student registration form.</p>
+  <a href="formss.html">View Project</a>
+  </div>
   </section>
   <!-- end of my recent works -->
   <section id="skills">
@@ -61,6 +93,7 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>Data entry</li>
+            <li>programming in C</li>
     </ul>
   </section>
   <footer>
@@ -80,4 +113,5 @@
     </div>
   </footer>  
 </body>
+<script src="java.js"></script>
 </html>
