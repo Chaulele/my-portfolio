@@ -1,0 +1,8 @@
+<section class="bio" id="about">
+        <div class="student-bio">
+        <h3>I'm Joseph Phiri</h3>
+        <h4>I am a web designer</h4>
+        </div>
+        <h3>About me</h3>
+        I am Malawian aged 24,who resides in Blantyer, but currently upgrading my studies in Bachelor of Science in Information and Communication Technology programme at Mzuzu University, weekend class which is under the Faculty of Faculty of Science, Technology and Innovation.
+    </section>
